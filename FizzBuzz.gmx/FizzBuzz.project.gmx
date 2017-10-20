@@ -10,15 +10,22 @@
     <sprite>sprites\column_standin_sprite</sprite>
     <sprite>sprites\floorstandin_sprite</sprite>
     <sprite>sprites\wallstandinsprite</sprite>
-    <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\Button_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\unSelectButton.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\Fizz</object>
     <object>objects\Wall_par</object>
     <object>objects\columnpar</object>
     <object>objects\florrpar</object>
+    <objects name="button">
+      <object>objects\Button_par</object>
+      <object>objects\testButton</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
