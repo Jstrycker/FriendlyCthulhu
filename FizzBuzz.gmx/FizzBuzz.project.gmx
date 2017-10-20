@@ -14,7 +14,6 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\Fizz</object>
     <object>objects\Wall_par</object>
