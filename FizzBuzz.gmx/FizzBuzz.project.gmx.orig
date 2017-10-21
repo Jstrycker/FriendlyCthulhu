@@ -7,28 +7,55 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\botstandinsprite</sprite>
+    <sprite>sprites\Ghost_Player_Down_Sprite</sprite>
+    <sprite>sprites\player_facing_left_sprite</sprite>
+    <sprite>sprites\Ghost_player_facing_left_Sprite</sprite>
+    <sprite>sprites\player_facing_right_Sprite</sprite>
+    <sprite>sprites\Ghost_player_facing_right_Sprite</sprite>
+    <sprite>sprites\Player_facing_up_Sprite</sprite>
+    <sprite>sprites\Ghost_player_facing_up_Sprite</sprite>
     <sprite>sprites\column_standin_sprite</sprite>
     <sprite>sprites\floorstandin_sprite</sprite>
     <sprite>sprites\wallstandinsprite</sprite>
     <sprite>sprites\Button_spr</sprite>
-<<<<<<< HEAD
     <sprite>sprites\bulletstandinsprite</sprite>
+    <sprite>sprites\Ghost_Basic_Attack</sprite>
     <sprite>sprites\meleeEnemyStandin</sprite>
     <sprite>sprites\RangedSpriteStandin</sprite>
-=======
-    <sprite>sprites\darkness_sprite</sprite>
-    <sprite>sprites\EmptySlot_Sprite</sprite>
+    <sprite>sprites\sprite8</sprite>
     <sprite>sprites\Attack_Button_Sprite</sprite>
-    <sprite>sprites\Defense_Sprite</sprite>
-    <sprite>sprites\Defense_Icon_Sprite</sprite>
     <sprite>sprites\Attack_Icon_Sprite</sprite>
->>>>>>> darknessOverlay
+    <sprite>sprites\darkness_sprite</sprite>
+    <sprite>sprites\Defense_Icon_Sprite</sprite>
+    <sprite>sprites\Defense_Sprite</sprite>
+    <sprite>sprites\EmptySlot_Sprite</sprite>
+    <sprite>sprites\Go_Button_Sprite</sprite>
+    <sprite>sprites\Cancel_Button_Sprite</sprite>
+    <sprite>sprites\PauseButton_Sprite</sprite>
+    <sprite>sprites\Move_Button_Sprite</sprite>
+    <sprite>sprites\Move_Icon_Sprite</sprite>
+    <sprite>sprites\Grid_Sprite</sprite>
+    <sprite>sprites\Highlight_spr</sprite>
+<<<<<<< HEAD
+    <sprite>sprites\WallSprite</sprite>
+=======
+    <sprite>sprites\wall_Sprite</sprite>
+>>>>>>> makingLevels
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\unSelectButton.gml</script>
-    <script>scripts\PushCommand.gml</script>
+    <script>scripts\PushCommandToGui.gml</script>
+    <script>scripts\PushCommandToProgram.gml</script>
+    <script>scripts\Clear_Queue.gml</script>
+    <script>scripts\Next_Command_Execution.gml</script>
+    <script>scripts\Pause.gml</script>
+    <script>scripts\open_overlay.gml</script>
+    <script>scripts\close_overlay.gml</script>
+    <script>scripts\unPause.gml</script>
+    <script>scripts\choose_action.gml</script>
+    <script>scripts\isMouseOverButton.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Fizz</object>
@@ -37,26 +64,42 @@
     <object>objects\floor_par</object>
     <object>objects\Button_par</object>
     <object>objects\testButton</object>
-<<<<<<< HEAD
+    <object>objects\Fizz_Bullet</object>
     <object>objects\bullet_par</object>
     <object>objects\enemy_bullet_par</object>
     <object>objects\enemy_Par</object>
     <object>objects\melee_enemy</object>
     <object>objects\ranged_Enemy</object>
     <object>objects\ranger</object>
-=======
-    <object>objects\darkessOverlay</object>
-    <object>objects\darkObject</object>
-    <object>objects\GuiOverlay</object>
-    <object>objects\Move_Stack_Gui</object>
-    <object>objects\EmptySlotGui</object>
-    <object>objects\AttackButton</object>
     <object>objects\Attack_Icon</object>
+    <object>objects\AttackButton</object>
+    <object>objects\daekness_overlay</object>
+    <object>objects\darknessOverlay</object>
+    <object>objects\darkObject</object>
     <object>objects\Defense_Icon</object>
     <object>objects\DefenseButton</object>
->>>>>>> darknessOverlay
+    <object>objects\EmptySlotGui</object>
+    <object>objects\GuiOverlay</object>
+    <object>objects\Move_Stack_Gui</object>
+    <object>objects\Cancel_Button</object>
+    <object>objects\Go_Button</object>
+    <object>objects\Icon_Par</object>
+    <object>objects\Immediate_Button_Par</object>
+    <object>objects\Pause_Button</object>
+    <object>objects\Move_Button</object>
+    <object>objects\Move_Icon</object>
+    <object>objects\Grid</object>
+    <object>objects\gridOverlay</object>
+    <object>objects\marker</object>
   </objects>
   <rooms name="rooms">
+<<<<<<< HEAD
+    <room>rooms\JoeLevel1</room>
+=======
+    <room>rooms\Jacobs_room</room>
+    <room>rooms\test_room</room>
+    <room>rooms\room1</room>
+>>>>>>> makingLevels
     <room>rooms\Innsmouth</room>
     <room>rooms\room1</room>
   </rooms>

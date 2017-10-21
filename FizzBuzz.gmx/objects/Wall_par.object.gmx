@@ -3,6 +3,7 @@
   <spriteName>WallSprite</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
+  <depth>30</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
