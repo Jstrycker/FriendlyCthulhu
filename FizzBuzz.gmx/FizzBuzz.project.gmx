@@ -12,11 +12,18 @@
     <sprite>sprites\wallstandinsprite</sprite>
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\Button_spr</sprite>
+    <sprite>sprites\darkness_sprite</sprite>
+    <sprite>sprites\EmptySlot_Sprite</sprite>
+    <sprite>sprites\Attack_Button_Sprite</sprite>
+    <sprite>sprites\Defense_Sprite</sprite>
+    <sprite>sprites\Defense_Icon_Sprite</sprite>
+    <sprite>sprites\Attack_Icon_Sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\unSelectButton.gml</script>
+    <script>scripts\PushCommand.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Fizz</object>
@@ -25,6 +32,15 @@
     <object>objects\floor_par</object>
     <object>objects\Button_par</object>
     <object>objects\testButton</object>
+    <object>objects\darkessOverlay</object>
+    <object>objects\darkObject</object>
+    <object>objects\GuiOverlay</object>
+    <object>objects\Move_Stack_Gui</object>
+    <object>objects\EmptySlotGui</object>
+    <object>objects\AttackButton</object>
+    <object>objects\Attack_Icon</object>
+    <object>objects\Defense_Icon</object>
+    <object>objects\DefenseButton</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

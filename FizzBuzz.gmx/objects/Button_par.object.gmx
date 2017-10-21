@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>isSelected = 0;
+self.depth = -2000;
 </string>
           </argument>
         </arguments>
