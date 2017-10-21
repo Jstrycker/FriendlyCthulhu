@@ -32,24 +32,14 @@ retries=0;
 frameNum=0;
 stackFrame[0,0]=0;
 program[0,0]=0;
-breakPoint=false;
+breakPoint=true;
 defending=false;
-step=5;
+step=8;
 for (xi=0;xi&lt;4;xi++){
     for (yi=0;yi&lt;3;yi++){
         stackFrame[xi,yi]=0;
     }
 }
-  for (yip=0;yip&lt;3;yip++){
-        stackFrame[yip,0]=1;
-    }
-    stackFrame[3,0]=2;
- for (yi=0;yi&lt;4;yi++){
-        stackFrame[yi,1]=yi;
-    }
- for (yi=0;yi&lt;4;yi++){
-        stackFrame[yi,2]=3;
-    }
  alarm_set(0,1);
 </string>
           </argument>
@@ -104,8 +94,8 @@ reprize+=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
+            <string>if(breakPoint=false){
+show_debug_message(stackFrame[lineNum,0]);
 if (lineNum&lt;4) {
 motion_set(dir*90,0);
 defending=false;
@@ -129,7 +119,6 @@ program[frameNum*4+1,i]=stackFrame[1,i];
 program[frameNum*4+2,i]=stackFrame[2,i];
 program[frameNum*4+3,i]=stackFrame[3,i];
 }
-breakpoint=true;
 frameNum=frameNum+1;
 lineNum=0;
 for (xi=0;xi&lt;4;xi++){
@@ -137,7 +126,10 @@ for (xi=0;xi&lt;4;xi++){
         stackFrame[xi,yi]=0;
     }
 }
+script_execute(open_overlay);
+script_execute(Pause);
 
+}
 }
 </string>
           </argument>
@@ -240,7 +232,7 @@ case 1:
     //move
     spaces=stackFrame[lineNum,2];
     dir=stackFrame[lineNum,1];
-    motion_set(dir*90, spaces);
+    motion_set(dir*90, 8);
     alarm_set(0, step*spaces);
 break;
 

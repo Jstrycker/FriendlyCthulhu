@@ -35,6 +35,7 @@
     <sprite>sprites\Move_Button_Sprite</sprite>
     <sprite>sprites\Move_Icon_Sprite</sprite>
     <sprite>sprites\Grid_Sprite</sprite>
+    <sprite>sprites\Highlight_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -82,6 +83,7 @@
     <object>objects\Move_Icon</object>
     <object>objects\Grid</object>
     <object>objects\gridOverlay</object>
+    <object>objects\marker</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
