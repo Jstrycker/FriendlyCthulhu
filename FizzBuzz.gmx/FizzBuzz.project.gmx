@@ -47,6 +47,7 @@
     <script>scripts\Pause.gml</script>
     <script>scripts\open_overlay.gml</script>
     <script>scripts\close_overlay.gml</script>
+    <script>scripts\unPause.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Fizz</object>
