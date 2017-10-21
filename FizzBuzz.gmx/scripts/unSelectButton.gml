@@ -4,8 +4,10 @@ with(Button_par){
             self.image_alpha = 1;
             self.image_blend = c_white;
             self.isSelected = 0;
-            script_execute(PushCommandToGui, self.icon);
-            script_execute(choose_action, self.icon);
+            if (!script_execute(isMouseOverButton)){
+                script_execute(PushCommandToGui, self.icon);
+                script_execute(choose_action, self.icon);
+            }
         }
     }
 }
