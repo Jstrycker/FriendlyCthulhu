@@ -12,6 +12,8 @@
     <sprite>sprites\wallstandinsprite</sprite>
     <sprite>sprites\Button_spr</sprite>
     <sprite>sprites\bulletstandinsprite</sprite>
+    <sprite>sprites\meleeEnemyStandin</sprite>
+    <sprite>sprites\RangedSpriteStandin</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -26,6 +28,11 @@
     <object>objects\Button_par</object>
     <object>objects\testButton</object>
     <object>objects\bullet_par</object>
+    <object>objects\enemy_bullet_par</object>
+    <object>objects\enemy_Par</object>
+    <object>objects\melee_enemy</object>
+    <object>objects\ranged_Enemy</object>
+    <object>objects\ranger</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Innsmouth</room>
