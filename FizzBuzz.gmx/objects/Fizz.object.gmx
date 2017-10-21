@@ -245,11 +245,11 @@ case 2:
     xPrime=x;
     yPrime=y;
     if dir==0 {
-        xPrime=x-64;}
+        xPrime=x+64;}
     if  dir==1{
         yPrime=y-64;}
     if dir==2 {
-        xPrime=x+64;}
+        xPrime=x-64;}
     if  dir==3{
         yPrime=y+64;}     
         alarm_set(0, step); 

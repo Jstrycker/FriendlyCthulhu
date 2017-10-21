@@ -28,12 +28,12 @@
             <string>
 instance_array[0] = instance_create(0, 0, gridOverlay);
 instance_array[1] = instance_create(64, 640, darknessOverlay);
-instance_array[2] = instance_create(32, 608, AttackButton);
-instance_array[3] = instance_create(96, 608, DefenseButton);
-instance_array[4] = instance_create(160, 608, Move_Button);
-instance_array[5] = instance_create(32, 302, Go_Button);
-instance_array[6] = instance_create(32, 380, Cancel_Button);
-instance_array[7] = instance_create(32, 458, Pause_Button);
+instance_array[2] = instance_create(32, 640, AttackButton);
+instance_array[3] = instance_create(96, 640, DefenseButton);
+instance_array[4] = instance_create(160, 640, Move_Button);
+instance_array[5] = instance_create(32, 384, Go_Button);
+instance_array[6] = instance_create(32, 448, Cancel_Button);
+instance_array[7] = instance_create(32, 512, Pause_Button);
 instance_array_length = 8;
 </string>
           </argument>

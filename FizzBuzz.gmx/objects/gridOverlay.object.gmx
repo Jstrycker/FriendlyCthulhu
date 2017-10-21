@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for (i = 0; i &lt; (room_width/64); i+=1){
-    for (j = 0; j &lt; (room_height/64); j+=1){
-        instance_array[i,j] = instance_create(i*64, j*64, Grid);
-        instance_array[i,j].depth = 1000
+            <string>for (i = -1; i &lt; (room_width/64); i+=1){
+    for (j = -1; j &lt; (room_height/64); j+=1){
+        instance_array[i+1,j+1] = instance_create((i*64), (j*64)+32, Grid);
+        instance_array[i+1,j+1].depth = 1000
     }
 }
 </string>
