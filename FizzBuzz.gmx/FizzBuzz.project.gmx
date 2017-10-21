@@ -92,6 +92,7 @@
     <object>objects\Lazer</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Leavle</room>
     <room>rooms\Jacobs_room2</room>
     <room>rooms\Innsmouth</room>
     <room>rooms\JoeLevel1</room>

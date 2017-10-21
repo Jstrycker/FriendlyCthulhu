@@ -234,6 +234,7 @@ case 2:
       
         speed=10;
         direction=other.dir*90
+         image_angle= (direction+90) %360;
         }
       
     else{

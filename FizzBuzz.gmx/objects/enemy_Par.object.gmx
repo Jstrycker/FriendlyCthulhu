@@ -120,9 +120,11 @@ room_restart();
             <kind>1</kind>
             <string>if breakPoint==true{
 breakPoint=false;
+ motion_set(dir*90, 0);
 alarm_set(0, 1);}
 else{
 breakPoint=true;
+ motion_set(dir*90, 0);
 }
 </string>
           </argument>
