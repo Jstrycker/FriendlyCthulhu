@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>fast=0;
 breakPoint=false;
+step = 5; //see bullet_par
 </string>
           </argument>
         </arguments>

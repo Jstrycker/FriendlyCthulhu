@@ -7,42 +7,7 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>QueueLength = 0;
-QueueArray[0] = -1;
-QueueArray[1] = -1;
-QueueArray[2] = -1;
-QueueArray[3] = -1;
-QueueArray[4] = -1;
-QueueArray[5] = -1;
-
-instance_create(0,0, EmptySlotGui)
-instance_create(0,64, EmptySlotGui)
-instance_create(0,128, EmptySlotGui)
-instance_create(0,192, EmptySlotGui)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-  </events>
+  <events/>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

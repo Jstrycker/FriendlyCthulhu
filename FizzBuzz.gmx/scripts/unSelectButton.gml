@@ -4,7 +4,8 @@ with(Button_par){
             self.image_alpha = 1;
             self.image_blend = c_white;
             self.isSelected = 0;
-            script_execute(PushCommand, self.icon);
+            script_execute(PushCommandToGui, self.icon);
+            script_execute(PushCommandToProgram, self.icon, mouse_x, mouse_y) //change self.icon to self.move and then create a variable "move" in each button that will be sent as an argument
         }
     }
 }

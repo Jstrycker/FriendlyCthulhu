@@ -21,12 +21,23 @@
     <sprite>sprites\Defense_Icon_Sprite</sprite>
     <sprite>sprites\Defense_Sprite</sprite>
     <sprite>sprites\EmptySlot_Sprite</sprite>
+    <sprite>sprites\Go_Button_Sprite</sprite>
+    <sprite>sprites\Cancel_Button_Sprite</sprite>
+    <sprite>sprites\PauseButton_Sprite</sprite>
+    <sprite>sprites\Move_Button_Sprite</sprite>
+    <sprite>sprites\Move_Icon_Sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\unSelectButton.gml</script>
-    <script>scripts\PushCommand.gml</script>
+    <script>scripts\PushCommandToGui.gml</script>
+    <script>scripts\PushCommandToProgram.gml</script>
+    <script>scripts\Clear_Queue.gml</script>
+    <script>scripts\Next_Command_Execution.gml</script>
+    <script>scripts\Pause.gml</script>
+    <script>scripts\open_overlay.gml</script>
+    <script>scripts\close_overlay.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Fizz</object>
@@ -45,13 +56,20 @@
     <object>objects\Attack_Icon</object>
     <object>objects\AttackButton</object>
     <object>objects\daekness_overlay</object>
-    <object>objects\darkessOverlay</object>
+    <object>objects\darknessOverlay</object>
     <object>objects\darkObject</object>
     <object>objects\Defense_Icon</object>
     <object>objects\DefenseButton</object>
     <object>objects\EmptySlotGui</object>
     <object>objects\GuiOverlay</object>
     <object>objects\Move_Stack_Gui</object>
+    <object>objects\Cancel_Button</object>
+    <object>objects\Go_Button</object>
+    <object>objects\Icon_Par</object>
+    <object>objects\Immediate_Button_Par</object>
+    <object>objects\Pause_Button</object>
+    <object>objects\Move_Button</object>
+    <object>objects\Move_Icon</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

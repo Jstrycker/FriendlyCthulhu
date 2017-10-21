@@ -8,7 +8,7 @@
   <parentName>Button_par</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="7" enumb="4">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>icon = Attack_Icon;
+isSelected = 0;
 </string>
           </argument>
         </arguments>

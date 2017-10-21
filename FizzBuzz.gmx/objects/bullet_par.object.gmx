@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>fast=0;
 breakPoint=false;
+step = 5;  //I added this variable to prevent a break, not sure wht you intended
 </string>
           </argument>
         </arguments>
