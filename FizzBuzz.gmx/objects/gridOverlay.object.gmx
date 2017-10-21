@@ -25,16 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-instance_array[0] = instance_create(0, 0, gridOverlay);
-instance_array[1] = instance_create(64, 640, darknessOverlay);
-instance_array[2] = instance_create(32, 608, AttackButton);
-instance_array[3] = instance_create(96, 608, DefenseButton);
-instance_array[4] = instance_create(160, 608, Move_Button);
-instance_array[5] = instance_create(32, 302, Go_Button);
-instance_array[6] = instance_create(32, 380, Cancel_Button);
-instance_array[7] = instance_create(32, 458, Pause_Button);
-instance_array_length = 8;
+            <string>for (i = 0; i &lt; (room_width/64); i+=1){
+    for (j = 0; j &lt; (room_height/64); j+=1){
+        instance_array[i,j] = instance_create(i*64, j*64, Grid);
+        instance_array[i,j].depth = 1000
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -57,10 +53,8 @@ instance_array_length = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for (i = 0; i &lt; instance_array_length -1; i+=1){ //-1 to keep the pause button
-    with (instance_array[i]) {
-        instance_destroy();
-    }
+            <string>with (Grid){
+    instance_destroy();
 }
 </string>
           </argument>

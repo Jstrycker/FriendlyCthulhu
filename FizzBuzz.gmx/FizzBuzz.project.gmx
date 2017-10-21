@@ -7,11 +7,19 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\botstandinsprite</sprite>
+    <sprite>sprites\Ghost_Player_Down_Sprite</sprite>
+    <sprite>sprites\player_facing_left_sprite</sprite>
+    <sprite>sprites\Ghost_player_facing_left_Sprite</sprite>
+    <sprite>sprites\player_facing_right_Sprite</sprite>
+    <sprite>sprites\Ghost_player_facing_right_Sprite</sprite>
+    <sprite>sprites\Player_facing_up_Sprite</sprite>
+    <sprite>sprites\Ghost_player_facing_up_Sprite</sprite>
     <sprite>sprites\column_standin_sprite</sprite>
     <sprite>sprites\floorstandin_sprite</sprite>
     <sprite>sprites\wallstandinsprite</sprite>
     <sprite>sprites\Button_spr</sprite>
     <sprite>sprites\bulletstandinsprite</sprite>
+    <sprite>sprites\Ghost_Basic_Attack</sprite>
     <sprite>sprites\meleeEnemyStandin</sprite>
     <sprite>sprites\RangedSpriteStandin</sprite>
     <sprite>sprites\sprite8</sprite>
@@ -26,6 +34,7 @@
     <sprite>sprites\PauseButton_Sprite</sprite>
     <sprite>sprites\Move_Button_Sprite</sprite>
     <sprite>sprites\Move_Icon_Sprite</sprite>
+    <sprite>sprites\Grid_Sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -70,6 +79,8 @@
     <object>objects\Pause_Button</object>
     <object>objects\Move_Button</object>
     <object>objects\Move_Icon</object>
+    <object>objects\Grid</object>
+    <object>objects\gridOverlay</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
