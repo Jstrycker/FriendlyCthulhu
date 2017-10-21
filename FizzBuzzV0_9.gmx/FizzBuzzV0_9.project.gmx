@@ -46,6 +46,12 @@
     <sprite>sprites\Lazer_Icon_Sprite</sprite>
     <sprite>sprites\Teleport_Button_Sprite</sprite>
     <sprite>sprites\Teleptort_Icon_Sprite</sprite>
+    <sprites name="Jacob_Spritesv1">
+      <sprite>sprites\Door_Sprite</sprite>
+      <sprite>sprites\Welcome_Screen</sprite>
+      <sprite>sprites\Start_Button_Sprite</sprite>
+      <sprite>sprites\Cursor_Sprite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -106,8 +112,20 @@
     <object>objects\GuiOverlay</object>
     <object>objects\Dash_Button</object>
     <object>objects\Dash_Icon</object>
+    <objects name="JAcobObject_v1">
+      <object>objects\Door</object>
+      <object>objects\Welcome</object>
+      <object>objects\Start_Button</object>
+      <object>objects\Exit_Button</object>
+      <object>objects\Cursor</object>
+    </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline0</timeline>
+  </timelines>
   <rooms name="rooms">
+    <room>rooms\tutorial</room>
+    <room>rooms\Main_Menu</room>
     <room>rooms\Leavle</room>
     <room>rooms\Jacobs_room2</room>
     <room>rooms\Innsmouth</room>

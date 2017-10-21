@@ -138,6 +138,8 @@
     <instance objName="ranged_Enemy" x="736" y="608" name="inst_466254C9" locked="0" code="stackSize=6;&#xA;&#xA;for (i=0;i&lt;5;i++){&#xA;program[i,0]=0;&#xA;program[i,1]=3;&#xA;program[i,2]=8;&#xA;}&#xA;&#xA;&#xA;&#xA;program[5,0]=2;&#xA;program[5,1]=3;&#xA;program[5,2]=0;&#xA;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="ranged_Enemy" x="736" y="32" name="inst_9AD22022" locked="0" code="stackSize=6;&#xA;&#xA;for (i=0;i&lt;5;i++){&#xA;program[i,0]=0;&#xA;program[i,1]=3;&#xA;program[i,2]=8;&#xA;}&#xA;&#xA;&#xA;&#xA;program[5,0]=2;&#xA;program[5,1]=1;&#xA;program[5,2]=0;&#xA;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="GuiOverlay" x="64" y="160" name="inst_A24CA256" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Door" x="128" y="352" name="inst_60320857" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Exit_Button" x="1376" y="64" name="inst_D536176F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
