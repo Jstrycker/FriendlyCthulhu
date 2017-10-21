@@ -9,7 +9,7 @@ iconNum=argument0
             show_debug_message(self.icon);
             switch (iconNum){
                 
-                case 29:
+                case 30:
                 theta=theta div 64;
                 tau=tau div 64;
                 show_debug_message(theta);
@@ -45,7 +45,7 @@ iconNum=argument0
             }
             script_execute(PushCommandToProgram, self.icon, marker.x, marker.y) //change self.icon to self.move and then create a variable "move" in each button that will be sent as an argument
             break;
-            case 18:
+            case 19:
                if theta>0  and abs(theta)>abs(tau){
                 dir=0;
                 theta=64;
@@ -70,7 +70,7 @@ iconNum=argument0
             script_execute(PushCommandToProgram, self.icon, marker.x+theta, marker.y+tau);
             
             break;
-            case 13:
+            case 14:
             if theta>0  and abs(theta)>abs(tau){
                 dir=0;
                 theta=64;

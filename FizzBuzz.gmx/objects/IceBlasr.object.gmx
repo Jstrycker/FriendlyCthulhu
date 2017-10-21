@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>bullet_par</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,12 +26,27 @@
           <argument>
             <kind>1</kind>
             <string>fast=0;
-dir=0
 breakPoint=false;
-step = 5;  //I added this variable to prevent a break, not sure wht you intended
+step=5;//see button_par
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="enemy_bullet_par">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="column_par">
@@ -66,35 +81,20 @@ step = 5;  //I added this variable to prevent a break, not sure wht you intended
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="7" enumb="11">
+    <event eventtype="4" ename="Fizz">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>203</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if breakPoint==true{
-speed=fast;
-breakPoint=false;
-alarm_set(0, step);}
-else{
-fast=speed;
-speed=0;
-breakPoint=true;
-}
-</string>
-          </argument>
-        </arguments>
       </action>
     </event>
   </events>

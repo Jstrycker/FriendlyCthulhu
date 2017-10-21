@@ -263,8 +263,95 @@ break;
 case 3:
     //Defend  
     dir=stackFrame[lineNum,1];
+    dirP=(dir+2)%4
     defending=true;
     alarm_set(0, step*3);
+
+break;
+
+case 4:
+//dash
+  spaces=2;
+    dir=stackFrame[lineNum,1];
+    motion_set(dir*90, 16);
+    alarm_set(0, step*spaces);
+
+break;
+case 5:
+//teleport
+  spaces=stackFrame[lineNum,2];
+    dir=stackFrame[lineNum,1];
+    if (place_empty(lengthdir_x(spaces*64, dir*90)+x, lengthdir_y(spaces*64, dir*90)+y)){
+    x=lengthdir_x(spaces*64, dir*90)+x;
+    y=lengthdir_y(spaces*64, dir*90)+y;
+    }
+    alarm_set(0, step);
+
+break;
+case 6:
+//LAZER BEAMS
+ dir=stackFrame[lineNum,1];
+    xPrime=x;
+    yPrime=y;
+    if dir==0 {
+        xPrime=x+64;}
+    if  dir==1{
+        yPrime=y-64;}
+    if dir==2 {
+        xPrime=x-64;}
+    if  dir==3{
+        yPrime=y+64;}     
+        alarm_set(0, step*3); 
+    pow=instance_create(xPrime,yPrime,Lazer)
+    with (pow){
+    dir=other.dir;
+    event_user(0);
+    }    
+
+
+break;
+case 7:
+//multi direction icer
+ pow=instance_create(x+64,y,IceBlasr)
+    with (pow){
+    speed=10;
+    direction=0;
+    } 
+    pow=instance_create(x+64,y-64,IceBlasr)
+    with (pow){
+    speed=10;
+    direction=45;
+    } 
+    pow=instance_create(x,y-64,IceBlasr)
+    with (pow){
+    speed=10;
+    direction=90;
+    } 
+    pow=instance_create(x-64,y-64,IceBlasr)
+    with (pow){
+    speed=10;
+    direction=135
+    } 
+    pow=instance_create(x-64,y,IceBlasr)
+    with (pow){
+    speed=10;
+    direction=180
+    } 
+    pow=instance_create(x-64,y+64,IceBlasr)
+    with (pow){
+    speed=10;
+    direction=225
+    }   
+    pow=instance_create(x,y+64,IceBlasr)
+    with (pow){
+    speed=10;
+    direction=270
+    } 
+    pow=instance_create(x+64,y+64,IceBlasr)
+    with (pow){
+    speed=10;
+    direction=315
+    } 
 
 break;
 

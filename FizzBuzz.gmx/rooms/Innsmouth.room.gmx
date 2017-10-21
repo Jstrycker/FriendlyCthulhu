@@ -159,7 +159,7 @@
     <instance objName="floor_par" x="352" y="64" name="inst_5814F848" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="floor_par" x="352" y="32" name="inst_F8F1161D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="floor_par" x="320" y="32" name="inst_C736C212" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fizz" x="192" y="160" name="inst_856FA07D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Fizz" x="736" y="160" name="inst_856FA07D" locked="0" code="breakPoint=false;&#xA;stackFrame[0,0]=4;&#xA;stackFrame[0,1]=3;&#xA;stackFrame[0,2]=0;&#xA;stackFrame[1,0]=5;&#xA;stackFrame[1,1]=0;&#xA;stackFrame[1,2]=2;&#xA;stackFrame[2,0]=6;&#xA;stackFrame[2,1]=2;&#xA;stackFrame[2,2]=6;&#xA;stackFrame[2,0]=6;&#xA;stackFrame[2,1]=2;&#xA;stackFrame[2,2]=6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_par" x="0" y="0" name="inst_E83CEA18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_par" x="32" y="0" name="inst_324AA080" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_par" x="64" y="0" name="inst_FF613D4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -195,8 +195,6 @@
     <instance objName="column_par" x="160" y="64" name="inst_BF2F0E62" locked="0" code="" scaleX="-1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="melee_enemy" x="192" y="480" name="inst_AD68E008" locked="0" code="stackSize=2;&#xA;program[0,0]=1;&#xA;program[0,1]=1;&#xA;program[0,2]=3;&#xA;program[1,0]=0;&#xA;program[1,1]=1;&#xA;program[1,2]=3;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ranged_Enemy" x="32" y="128" name="inst_B6E41037" locked="0" code="stackSize=2;&#xA;program[0,0]=2;&#xA;program[0,1]=1;&#xA;program[0,2]=2;&#xA;program[1,0]=2;&#xA;program[1,1]=0;&#xA;program[1,2]=3;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Move_Stack_Gui" x="32" y="384" name="inst_2CEF9890" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="GuiOverlay" x="64" y="384" name="inst_0105F645" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -37,6 +37,7 @@
     <sprite>sprites\Grid_Sprite</sprite>
     <sprite>sprites\Highlight_spr</sprite>
     <sprite>sprites\WallSprite</sprite>
+    <sprite>sprites\LAZER_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -61,6 +62,7 @@
     <object>objects\Button_par</object>
     <object>objects\testButton</object>
     <object>objects\Fizz_Bullet</object>
+    <object>objects\IceBlasr</object>
     <object>objects\bullet_par</object>
     <object>objects\enemy_bullet_par</object>
     <object>objects\enemy_Par</object>
@@ -87,12 +89,13 @@
     <object>objects\Grid</object>
     <object>objects\gridOverlay</object>
     <object>objects\marker</object>
+    <object>objects\Lazer</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\test_room</room>
-    <room>rooms\JoeLevel1</room>
-    <room>rooms\Jacobs_room</room>
     <room>rooms\Innsmouth</room>
+    <room>rooms\JoeLevel1</room>
+    <room>rooms\test_room</room>
+    <room>rooms\Jacobs_room</room>
     <room>rooms\room1</room>
     <room>rooms\JoeLevel2</room>
   </rooms>
