@@ -35,6 +35,12 @@ instance_array[5] = instance_create(32, 384, Go_Button);
 instance_array[6] = instance_create(32, 448, Cancel_Button);
 instance_array[7] = instance_create(32, 512, Pause_Button);
 instance_array_length = 8;
+
+for (i = 0; i &lt; instance_array_length; i+=1){
+    with (instance_array[i]) {
+        depth = -500;
+    }
+}
 </string>
           </argument>
         </arguments>

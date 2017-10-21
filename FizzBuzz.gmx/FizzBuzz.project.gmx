@@ -36,6 +36,7 @@
     <sprite>sprites\Move_Icon_Sprite</sprite>
     <sprite>sprites\Grid_Sprite</sprite>
     <sprite>sprites\Highlight_spr</sprite>
+    <sprite>sprites\wall_Sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -50,6 +51,7 @@
     <script>scripts\close_overlay.gml</script>
     <script>scripts\unPause.gml</script>
     <script>scripts\choose_action.gml</script>
+    <script>scripts\isMouseOverButton.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Fizz</object>
@@ -87,6 +89,8 @@
     <object>objects\marker</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Jacobs_room</room>
+    <room>rooms\test_room</room>
     <room>rooms\room1</room>
     <room>rooms\Innsmouth</room>
   </rooms>
