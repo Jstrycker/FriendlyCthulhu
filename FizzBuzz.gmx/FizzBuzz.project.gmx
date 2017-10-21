@@ -21,7 +21,7 @@
     <object>objects\floorpar</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\Innsmouth</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
