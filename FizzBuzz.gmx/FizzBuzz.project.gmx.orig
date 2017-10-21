@@ -36,16 +36,12 @@
     <sprite>sprites\Move_Icon_Sprite</sprite>
     <sprite>sprites\Grid_Sprite</sprite>
     <sprite>sprites\Highlight_spr</sprite>
-<<<<<<< HEAD
     <sprite>sprites\WallSprite</sprite>
-=======
-    <sprite>sprites\wall_Sprite</sprite>
->>>>>>> makingLevels
+    <sprite>sprites\LAZER_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\unSelectButton.gml</script>
     <script>scripts\PushCommandToGui.gml</script>
     <script>scripts\PushCommandToProgram.gml</script>
     <script>scripts\Clear_Queue.gml</script>
@@ -56,6 +52,7 @@
     <script>scripts\unPause.gml</script>
     <script>scripts\choose_action.gml</script>
     <script>scripts\isMouseOverButton.gml</script>
+    <script>scripts\unSelectButton.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Fizz</object>
@@ -65,6 +62,7 @@
     <object>objects\Button_par</object>
     <object>objects\testButton</object>
     <object>objects\Fizz_Bullet</object>
+    <object>objects\IceBlasr</object>
     <object>objects\bullet_par</object>
     <object>objects\enemy_bullet_par</object>
     <object>objects\enemy_Par</object>
@@ -91,17 +89,23 @@
     <object>objects\Grid</object>
     <object>objects\gridOverlay</object>
     <object>objects\marker</object>
+    <object>objects\Lazer</object>
   </objects>
   <rooms name="rooms">
 <<<<<<< HEAD
+    <room>rooms\Innsmouth</room>
     <room>rooms\JoeLevel1</room>
+    <room>rooms\test_room</room>
+    <room>rooms\Jacobs_room</room>
 =======
+    <room>rooms\Jacobs_room2</room>
     <room>rooms\Jacobs_room</room>
     <room>rooms\test_room</room>
-    <room>rooms\room1</room>
->>>>>>> makingLevels
+    <room>rooms\JoeLevel1</room>
     <room>rooms\Innsmouth</room>
+>>>>>>> makeMoreLevels
     <room>rooms\room1</room>
+    <room>rooms\JoeLevel2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
