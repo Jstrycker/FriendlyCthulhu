@@ -24,6 +24,14 @@
     <sprite>sprites\RangedSpriteStandin</sprite>
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\Attack_Button_Sprite</sprite>
+    <sprite>sprites\Lazer_Button_Sprite</sprite>
+    <sprite>sprites\Teleport_Button_Sprite</sprite>
+    <sprite>sprites\Dash_Button_Sprite</sprite>
+    <sprite>sprites\Ice_Blast_Button_Sprite</sprite>
+    <sprite>sprites\Ice_Blast_Icon_Sprite</sprite>
+    <sprite>sprites\Dash_Icon_Sprite</sprite>
+    <sprite>sprites\Teleptort_Icon_Sprite</sprite>
+    <sprite>sprites\Lazer_Icon_Sprite</sprite>
     <sprite>sprites\Attack_Icon_Sprite</sprite>
     <sprite>sprites\darkness_sprite</sprite>
     <sprite>sprites\Defense_Icon_Sprite</sprite>
@@ -90,6 +98,14 @@
     <object>objects\gridOverlay</object>
     <object>objects\marker</object>
     <object>objects\Lazer</object>
+    <object>objects\Lazer_Button</object>
+    <object>objects\Lazer_Icon</object>
+    <object>objects\Teleport_Button</object>
+    <object>objects\Teleport_Icon</object>
+    <object>objects\Ice_Blast_Button</object>
+    <object>objects\Dash_Button</object>
+    <object>objects\Ice_Blast_Icon</object>
+    <object>objects\Dash_Icon</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Jacobs_room2</room>

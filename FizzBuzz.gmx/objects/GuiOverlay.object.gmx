@@ -31,10 +31,14 @@ instance_array[1] = instance_create(64, 640, darknessOverlay);
 instance_array[2] = instance_create(32, 640, AttackButton);
 instance_array[3] = instance_create(96, 640, DefenseButton);
 instance_array[4] = instance_create(160, 640, Move_Button);
-instance_array[5] = instance_create(32, 384, Go_Button);
-instance_array[6] = instance_create(32, 448, Cancel_Button);
-instance_array[7] = instance_create(32, 512, Pause_Button);
-instance_array_length = 8;
+instance_array[5] = instance_create(224, 640, Lazer_Button);
+instance_array[6] = instance_create(288, 640, Teleport_Button);
+instance_array[7] = instance_create(352, 640, Dash_Button);
+instance_array[8] = instance_create(416, 640, Ice_Blast_Button);
+instance_array[9] = instance_create(32, 384, Go_Button);
+instance_array[10] = instance_create(32, 448, Cancel_Button);
+
+instance_array_length = 11;
 </string>
           </argument>
         </arguments>
@@ -57,7 +61,7 @@ instance_array_length = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for (i = 0; i &lt; instance_array_length -1; i+=1){ //-1 to keep the pause button
+            <string>for (i = 0; i &lt; instance_array_length; i+=1){ //-1 to keep the pause button
     with (instance_array[i]) {
         instance_destroy();
     }

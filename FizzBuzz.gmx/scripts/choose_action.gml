@@ -95,6 +95,7 @@ iconNum=argument0
             script_execute(PushCommandToProgram, self.icon, marker.x+theta, marker.y+tau);
             
             break;
+            
             default:
             
             marker.x=0;
