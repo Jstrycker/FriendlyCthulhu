@@ -35,6 +35,7 @@
     <object>objects\floor_par</object>
     <object>objects\Button_par</object>
     <object>objects\testButton</object>
+    <object>objects\Fizz_Bullet</object>
     <object>objects\bullet_par</object>
     <object>objects\enemy_bullet_par</object>
     <object>objects\enemy_Par</object>
@@ -53,8 +54,8 @@
     <object>objects\Move_Stack_Gui</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\Innsmouth</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -209,7 +209,7 @@ for (xi=0;xi&lt;4;xi++){
             <kind>1</kind>
             <string>if breakPoint==true{
 breakPoint=false;
-alarm_set(0, step);}
+alarm_set(0, 1);}
 else{
 breakPoint=true;
 }
@@ -256,7 +256,7 @@ case 2:
         xPrime=x+64;}
     if  dir==3{
         yPrime=y+64;}      
-    pow=instance_create(xPrime,yPrime,bullet_par)
+    pow=instance_create(xPrime,yPrime,Fizz_Bullet)
     with (pow){
     speed=10;
     direction=other.dir*90

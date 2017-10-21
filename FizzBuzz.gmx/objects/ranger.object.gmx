@@ -82,7 +82,7 @@ alarm_set(0,step);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="bullet_par">
+    <event eventtype="4" ename="Fizz_Bullet">
       <action>
         <libid>1</libid>
         <id>203</id>
