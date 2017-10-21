@@ -54,6 +54,7 @@
     <instance objName="darkessOverlay" x="64" y="224" name="inst_89C35A0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GuiOverlay" x="96" y="224" name="inst_44AF8F8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fizz" x="256" y="160" name="inst_BF6DA335" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Move_Stack_Gui" x="128" y="224" name="inst_2D739911" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
