@@ -34,7 +34,7 @@ stackFrame[0,0]=0;
 program[0,0]=0;
 breakPoint=false;
 defending=false;
-step=15;
+step=5;
 for (xi=0;xi&lt;4;xi++){
     for (yi=0;yi&lt;3;yi++){
         stackFrame[xi,yi]=0;
@@ -110,7 +110,7 @@ if (lineNum&lt;4) {
 motion_set(dir*90,0);
 defending=false;
 
-alarm_set(0, step);
+
 event_user(0);
 lineNum=lineNum+1;
 }
@@ -241,6 +241,7 @@ case 1:
     spaces=stackFrame[lineNum,2];
     dir=stackFrame[lineNum,1];
     motion_set(dir*90, spaces);
+    alarm_set(0, step*spaces);
 break;
 
 case 2:
@@ -255,7 +256,8 @@ case 2:
     if dir==2 {
         xPrime=x+64;}
     if  dir==3{
-        yPrime=y+64;}      
+        yPrime=y+64;}     
+        alarm_set(0, step); 
     pow=instance_create(xPrime,yPrime,Fizz_Bullet)
     with (pow){
     speed=10;
@@ -267,6 +269,7 @@ case 3:
     //Defend  
     dir=stackFrame[lineNum,1];
     defending=true;
+    alarm_set(0, step*3);
 
 break;
 

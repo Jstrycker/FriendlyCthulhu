@@ -29,7 +29,7 @@
 stackPointer=0
 stackSize=1;
 dir=0;
-step=15;
+step=5;
 program[0,0]=1;
 for (xi=0;xi&lt;stackSize;xi++){
     for (yi=0;yi&lt;3;yi++){
