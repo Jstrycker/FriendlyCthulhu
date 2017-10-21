@@ -37,9 +37,10 @@ for (xi=0;xi&lt;4;xi++){
         stackFrame[xi,yi]=0;
     }
 }
-  for (yip=0;yip&lt;4;yip++){
+  for (yip=0;yip&lt;3;yip++){
         stackFrame[yip,0]=1;
     }
+    stackFrame[3,0]=2;
  for (yi=0;yi&lt;4;yi++){
         stackFrame[yi,1]=yi;
     }
@@ -74,7 +75,7 @@ for (xi=0;xi&lt;4;xi++){
 if (lineNum&lt;4) {
 motion_set(dir*90,0);
 
-alarm_set(0, 10);
+alarm_set(0, 20);
 event_user(0);
 lineNum=lineNum+1;
 }
@@ -108,6 +109,52 @@ for (xi=0;xi&lt;4;xi++){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="column_par">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>motion_set(dir*90,0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Wall_par">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>motion_set(dir*90,0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
@@ -127,9 +174,36 @@ for (xi=0;xi&lt;4;xi++){
             <kind>1</kind>
             <string>switch (stackFrame[lineNum,0]){
 case 1:
+    //move
     spaces=stackFrame[lineNum,2];
     dir=stackFrame[lineNum,1];
     motion_set(dir*90, spaces);
+break;
+
+case 2:
+    //Main Guns
+    dir=stackFrame[lineNum,1];
+    xPrime=x;
+    yPrime=y;
+    if dir==0 {
+        xPrime=x-64;}
+    if  dir==1{
+        yPrime=y-64;}
+    if dir==2 {
+        xPrime=x+64;}
+    if  dir==3{
+        yPrime=y+64;}      
+    pow=instance_create(xPrime,yPrime,bullet_par)
+    with (pow){
+    speed=10;
+    direction=other.dir*90
+    }    
+
+break;
+
+
+default:
+
 break;
 
 

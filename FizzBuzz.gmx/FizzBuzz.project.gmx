@@ -10,8 +10,8 @@
     <sprite>sprites\column_standin_sprite</sprite>
     <sprite>sprites\floorstandin_sprite</sprite>
     <sprite>sprites\wallstandinsprite</sprite>
-    <sprite>sprites\sprite4</sprite>
     <sprite>sprites\Button_spr</sprite>
+    <sprite>sprites\bulletstandinsprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -25,10 +25,11 @@
     <object>objects\floor_par</object>
     <object>objects\Button_par</object>
     <object>objects\testButton</object>
+    <object>objects\bullet_par</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\Innsmouth</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
