@@ -11,16 +11,18 @@
     <sprite>sprites\floorstandin_sprite</sprite>
     <sprite>sprites\wallstandinsprite</sprite>
     <sprite>sprites\Button_spr</sprite>
+<<<<<<< HEAD
     <sprite>sprites\bulletstandinsprite</sprite>
     <sprite>sprites\meleeEnemyStandin</sprite>
     <sprite>sprites\RangedSpriteStandin</sprite>
-    <sprite>sprites\sprite8</sprite>
-    <sprite>sprites\Attack_Button_Sprite</sprite>
-    <sprite>sprites\Attack_Icon_Sprite</sprite>
+=======
     <sprite>sprites\darkness_sprite</sprite>
-    <sprite>sprites\Defense_Icon_Sprite</sprite>
-    <sprite>sprites\Defense_Sprite</sprite>
     <sprite>sprites\EmptySlot_Sprite</sprite>
+    <sprite>sprites\Attack_Button_Sprite</sprite>
+    <sprite>sprites\Defense_Sprite</sprite>
+    <sprite>sprites\Defense_Icon_Sprite</sprite>
+    <sprite>sprites\Attack_Icon_Sprite</sprite>
+>>>>>>> darknessOverlay
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,26 +37,28 @@
     <object>objects\floor_par</object>
     <object>objects\Button_par</object>
     <object>objects\testButton</object>
+<<<<<<< HEAD
     <object>objects\bullet_par</object>
     <object>objects\enemy_bullet_par</object>
     <object>objects\enemy_Par</object>
     <object>objects\melee_enemy</object>
     <object>objects\ranged_Enemy</object>
     <object>objects\ranger</object>
-    <object>objects\Attack_Icon</object>
-    <object>objects\AttackButton</object>
-    <object>objects\daekness_overlay</object>
+=======
     <object>objects\darkessOverlay</object>
     <object>objects\darkObject</object>
-    <object>objects\Defense_Icon</object>
-    <object>objects\DefenseButton</object>
-    <object>objects\EmptySlotGui</object>
     <object>objects\GuiOverlay</object>
     <object>objects\Move_Stack_Gui</object>
+    <object>objects\EmptySlotGui</object>
+    <object>objects\AttackButton</object>
+    <object>objects\Attack_Icon</object>
+    <object>objects\Defense_Icon</object>
+    <object>objects\DefenseButton</object>
+>>>>>>> darknessOverlay
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\Innsmouth</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
