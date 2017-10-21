@@ -10,9 +10,19 @@
     <sprite>sprites\column_standin_sprite</sprite>
     <sprite>sprites\floorstandin_sprite</sprite>
     <sprite>sprites\wallstandinsprite</sprite>
+    <sprite>sprites\sprite4</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\Fizz</object>
+    <object>objects\Wall_par</object>
+    <object>objects\columnpar</object>
+    <object>objects\florrpar</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
