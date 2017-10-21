@@ -36,6 +36,7 @@
     <sprite>sprites\Move_Icon_Sprite</sprite>
     <sprite>sprites\Grid_Sprite</sprite>
     <sprite>sprites\Highlight_spr</sprite>
+    <sprite>sprites\WallSprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -87,8 +88,9 @@
     <object>objects\marker</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\JoeLevel1</room>
     <room>rooms\Innsmouth</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>breakPoint=false;
+            <string>breakPoint=true;
 stackPointer=0
 stackSize=1;
 dir=0;
@@ -224,16 +224,17 @@ case 2:
     yPrime=y;
         
     pow=instance_create(xPrime,yPrime,enemy_bullet_par)
+    with (pow){
     if other.dir&lt;4{
-      with (pow){
+      
         speed=10;
         direction=other.dir*90
         }
-    }    
+  
     else{
     speed=10;  
     direction=point_direction(x,y,Fizz.x,Fizz.y);
-  
+  }
   
   
   }
