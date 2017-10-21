@@ -54,8 +54,8 @@
     <object>objects\Move_Stack_Gui</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Innsmouth</room>
     <room>rooms\room1</room>
+    <room>rooms\Innsmouth</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

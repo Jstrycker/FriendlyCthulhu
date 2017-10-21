@@ -25,13 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surf = -1;
+            <string>if (instance_exists(Fizz) and !instance_exists(darkObject)){
+    darkObjectId = instance_create(0, 0, darkObject)
+    darkObjectId.image_xscale = 100;
+    darkObjectId.image_yscale = 100;
+    darkObjectId.depth = -1000;
+    darkObjectId.image_alpha = .5;
+    
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,14 +53,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(Fizz) and !instance_exists(darkObject)){
-    darkObjectId = instance_create(0, 0, darkObject)
-    darkObjectId.image_xscale = 100;
-    darkObjectId.image_yscale = 100;
-    darkObjectId.depth = -1000;
-    darkObjectId.image_alpha = .5;
-    
-}
+            <string>surf = -1;
 </string>
           </argument>
         </arguments>
