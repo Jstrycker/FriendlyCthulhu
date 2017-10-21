@@ -18,7 +18,7 @@
     <object>objects\Fizz</object>
     <object>objects\Wall_par</object>
     <object>objects\columnpar</object>
-    <object>objects\florrpar</object>
+    <object>objects\floorpar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

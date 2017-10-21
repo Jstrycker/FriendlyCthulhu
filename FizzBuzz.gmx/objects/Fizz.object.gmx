@@ -7,7 +7,139 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dir=0;
+lineNum=0;
+retries=0;
+frameNum=0;
+stackFrame[0,0]=0;
+program[0,0]=0;
+breakPoint=false;
+for (xi=0;xi&lt;4;xi++){
+    for (yi=0;yi&lt;3;yi++){
+        stackFrame[xi,yi]=0;
+    }
+}
+  for (yip=0;yip&lt;4;yip++){
+        stackFrame[yip,0]=1;
+    }
+ for (yi=0;yi&lt;4;yi++){
+        stackFrame[yi,1]=yi;
+    }
+ for (yi=0;yi&lt;4;yi++){
+        stackFrame[yi,2]=3;
+    }
+ alarm_set(0,1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+
+if (lineNum&lt;4) {
+motion_set(dir*90,0);
+
+alarm_set(0, 10);
+event_user(0);
+lineNum=lineNum+1;
+}
+
+else{
+motion_set(dir*90,0);
+
+for (xi=0;xi&lt;4;xi++){
+    for (yi=0;yi&lt;3;yi++){
+        program[xi+(4*frameNum),yi]=0;
+    }
+}
+for(i=0;i&lt;3;i++){
+program[frameNum*4,i]=stackFrame[0,i];
+program[frameNum*4+1,i]=stackFrame[1,i];
+program[frameNum*4+2,i]=stackFrame[2,i];
+program[frameNum*4+3,i]=stackFrame[3,i];
+}
+breakpoint=true;
+frameNum=frameNum+1;
+lineNum=0;
+for (xi=0;xi&lt;4;xi++){
+    for (yi=0;yi&lt;3;yi++){
+        stackFrame[xi,yi]=0;
+    }
+}
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>switch (stackFrame[lineNum,0]){
+case 1:
+    spaces=stackFrame[lineNum,2];
+    dir=stackFrame[lineNum,1];
+    motion_set(dir*90, spaces);
+break;
+
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
